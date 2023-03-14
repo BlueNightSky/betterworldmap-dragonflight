@@ -51,3 +51,7 @@ This addon has been (mostly) translated to the following languages:
 * `zhTW` - Chinese (Traditional) (thanks mcc1!)
 
 If you would like to translate the addon to another language, or fill in any gaps, please open a [ticket](https://github.com/wyldclaw/betterworldmap-dragonflight/issues) or submit a [pull request](https://github.com/wyldclaw/betterworldmap-dragonflight/pulls) on GitHub.
+
+## Credits
+
+* I'd like to thank Zarillion for inspiring much of the codebase for this addon.
