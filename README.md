@@ -16,7 +16,7 @@ This addon adds information to the Dragon Isles map from the following zones:
 ### Dragon Isles
 
 * Ancient Waygate locations. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
-* Aylaag Camp loctions. Learn more about the [The Ohn'ahran Trail](https://www.wowhead.com/achievement=16462/the-ohnahran-trail).
+* Aylaag Camp locations. Learn more about the [The Ohn'ahran Trail](https://www.wowhead.com/achievement=16462/the-ohnahran-trail).
 * Elemental Storm locations. Learn to become a [Storm Chaster](https://www.wowhead.com/achievement=16490/storm-chaser).
 * Grand Hunt locations. Learn to become a [Hunt Master](https://www.wowhead.com/achievement=16540/hunt-master).
 
