@@ -107,7 +107,11 @@ end
 function WorldMapOptionsButtonMixin:InitializeDropDown()
     local mapID = self:GetParent():GetMapID()
     if mapID == ns.parentMapID then
-        for _, group in pairs(ns.groups) do
+        local groupsSorted = {}
+        for k, _ in pairs(ns.groups) do table.insert(groupsSorted, k) end
+        table.sort(groupsSorted)
+        for _, v in ipairs(groupsSorted) do
+            local group = ns.groups[v]
             local atlas = CreateAtlasMarkup(group.atlas, 20, 20)
             ns.DDM:UIDropDownMenu_AddButton({
                 text = atlas .. ' ' .. ns.RenderText(group.label),
@@ -142,8 +146,8 @@ function Addon:OnInitialize()
 end
 
 function Addon:Refresh()
-    local mapID = WorldMapFrame.mapID
-    ToggleWorldMap()
-    ToggleWorldMap()
-    WorldMapFrame:SetMapID(mapID)
+    for provider in next, WorldMapFrame.dataProviders do
+        provider:RefreshAllData()
+    end
+    ns.AWG.UpdateAncientWaygates(WorldMapFrame.mapID)
 end

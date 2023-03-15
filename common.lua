@@ -27,18 +27,6 @@ ns.groups.AYLAAG_CAMPS = {
     name = 'aylaag_camp'
 }
 
-ns.groups.ELEMENTAL_STORM = {
-    atlas = 'ElementalStorm-Lesser-Fire',
-    label = L['elemental_storm_label'],
-    name = 'elemental_storm'
-}
-
-ns.groups.GRAND_HUNTS = {
-    atlas = 'minimap-genericevent-hornicon',
-    label = L['grand_hunt_label'],
-    name = 'grand_hunt'
-}
-
 ns.groups.COMMUNITY_FEAST = {
     atlas = 'MajorFactions_MapIcons_Tuskarr64',
     label = L['community_feast_label'],
@@ -51,6 +39,12 @@ ns.groups.DRAGONBANE_SIEGE = {
     name = 'siege_on_dragonbane_keep'
 }
 
+ns.groups.ELEMENTAL_STORM = {
+    atlas = 'ElementalStorm-Lesser-Fire',
+    label = L['elemental_storm_label'],
+    name = 'elemental_storm'
+}
+
 ns.groups.FISHING_HOLE = {
     atlas = 'Fishing-Hole',
     label = L['tuskarr_fishing_hole_label'],
@@ -61,4 +55,10 @@ ns.groups.FROSTSTONE_VAULT_STORM = {
     atlas = 'ElementalStorm-Boss-Air',
     label = L['froststone_vault_storm_label'],
     name = 'froststone_vault_storm'
+}
+
+ns.groups.GRAND_HUNTS = {
+    atlas = 'minimap-genericevent-hornicon',
+    label = L['grand_hunt_label'],
+    name = 'grand_hunt'
 }
