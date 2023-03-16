@@ -1,5 +1,7 @@
 **A addon for the Dragonflight expansion. It will add icons for points of interest to the Dragon Isles world map.**
 
+Now available on CurseForge! [BetterWorldMap: Dragonflight](https://www.curseforge.com/wow/addons/betterworldmap-dragonflight)
+
 ## Features
 
 ### Quick Toggle Menu
