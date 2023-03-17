@@ -1,3 +1,4 @@
+-- French translation by Lightuky EU-Khaz Modan
 local ADDON_NAME, _ = ...
 local L = LibStub('AceLocale-3.0'):NewLocale(ADDON_NAME, 'frFR')
 if not L then return end
@@ -6,7 +7,7 @@ if not L then return end
 ----------------------------------- GLOBAL ------------------------------------
 -------------------------------------------------------------------------------
 
-L['addon_description'] = 'Adjust icon display for this map.'
+L['addon_description'] = 'Régler l\'affichage des icônes pour cette carte.'
 
 -------------------------------------------------------------------------------
 ----------------------------------- GROUPS ------------------------------------
