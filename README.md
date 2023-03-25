@@ -4,27 +4,26 @@ Now available on CurseForge! [BetterWorldMap: Dragonflight](https://www.cursefor
 
 ## Features
 
-### Quick Toggle Menu
-
 A quick toggle menu will appear on the Dragon Isles map which allows you to quickly toggle the visibility of any icons added to the world map.
 
-## Expansion Features
-
-This addon adds information to the Dragon Isles map from the following zones:
+This addon adds information to the Dragon Isles map for the following zones:
 
 * Patch 10.0.0 - The Waking Shores, Ohn'ahran Plains, The Azure Span, and Thaldraszus
 * Patch 10.0.7 - The Forbidden Reach
 
 ### Dragon Isles
 
-* Ancient Waygate locations. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
-* Aylaag Camp locations. Learn more about the [The Ohn'ahran Trail](https://www.wowhead.com/achievement=16462/the-ohnahran-trail).
-* Elemental Storm locations. Learn to become a [Storm Chaster](https://www.wowhead.com/achievement=16490/storm-chaser).
-* Grand Hunt locations. Learn to become a [Hunt Master](https://www.wowhead.com/achievement=16540/hunt-master).
+* Ancient Waygate locations in all zones. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
+* Elemental Storm locations in all zones. Learn to become a [Storm Chaster](https://www.wowhead.com/achievement=16490/storm-chaser).
+* Grand Hunt locations in all zones. Learn to become a [Hunt Master](https://www.wowhead.com/achievement=16540/hunt-master).
 
 ### The Waking Shores
 
 * Siege on Dragonbane Keep. Learn more about the [Siege on Dragonbane Keep](https://www.wowhead.com/achievement=16411/siege-on-dragonbane-keep-home-sweet-home).
+
+### Ohn'ahran Plains
+
+* Aylaag Camp locations. Learn more about the [The Ohn'ahran Trail](https://www.wowhead.com/achievement=16462/the-ohnahran-trail).
 
 ### The Azure Span
 
@@ -37,8 +36,6 @@ This addon adds information to the Dragon Isles map from the following zones:
 ## Limitations
 
 Due to World of Warcraft API limitations this addon _cannot_ show exact Grand Hunt locations unless you are in the zone where the Grand Hunt is currently active.
-
-This addon _does not_ currently show Aylaag Camp locations unless you are in the Ohn'ahran Plains.
 
 ## Localization
 
