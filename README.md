@@ -31,7 +31,7 @@ This addon adds information to the Dragon Isles map for the following zones:
 
 ### The Forbidden Reach
 
-* Froststone Vault Primal Storm location.
+* Froststone Vault Primal Storm location. Learn more about [Under the Weather](https://www.wowhead.com/achievement=17540/under-the-weather).
 
 ## Limitations
 
