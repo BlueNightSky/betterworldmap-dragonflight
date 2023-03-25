@@ -41,7 +41,7 @@ Due to World of Warcraft API limitations this addon _cannot_ show exact Grand Hu
 
 This addon has been (mostly) translated to the following languages:
 
-* `deDE` - German (thanks Dathwada EU-Eredar!)
+* `deDE` - German (thanks Dathwada EU-Eredar and Ioney!)
 * `esES` - Spanish (Spain) (thanks (EU) Krovikan-Minahonda!)
 * `frFR` - French (thanks Lightuky EU-Khaz Modan!)
 * `koKR` - Korean (thanks soaa!)
