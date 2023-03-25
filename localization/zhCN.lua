@@ -13,7 +13,7 @@ L['addon_description'] = 'Adjust icon display for this map.'
 -------------------------------------------------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'
-L['aylaag_camp_label'] = 'Aylaag Camp'
+L['aylaag_camp_label'] = '艾拉格營地'
 L['elemental_storm_label'] = '{spell:392768}'
 L['froststone_vault_storm_label'] = '霜石宝库原始风暴'
 L['grand_hunt_label'] = '洪荒狩猎'
