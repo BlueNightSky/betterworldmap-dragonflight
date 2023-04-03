@@ -131,17 +131,13 @@ end
 -------------------------------------------------------------------------------
 
 function Addon:OnInitialize()
-    -- initialize database
     if not _G[ns.DB] then ns:SetDefaultOptions() end
 
-    -- add world map button
     local template = ADDON_NAME .. 'WorldMapOptionsButtonTemplate'
     LibStub('Krowi_WorldMapButtons-1.4'):Add(template, 'DROPDOWNTOGGLEBUTTON')
 
-    -- query localized expansion name
     ns.addon_name = 'BetterWorldMap: ' .. EJ_GetTierInfo(ns.expansion)
 
-    -- query localized group labels
     for _, group in pairs(ns.groups) do ns.PrepareText(group.label) end
 end
 
