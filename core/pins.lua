@@ -73,14 +73,20 @@ end
 
 ns.AWG = {}
 
-ns.AWG.ProcessTaxiNode = function(mapID, childMapID, taxiNode)
-    local fp = ns.map[mapID][childMapID][taxiNode.nodeID]
-    local pin = CreateFrame('Frame', 'BWM_Pin_AncientWaygate', nil)
+ns.AWG.CreatePin = function(nodeID)
+    local pin = CreateFrame('Frame', 'BWM_Pin_' .. nodeID .. '_AW', nil)
     pin:SetWidth(22)
     pin:SetHeight(22)
     pin.texture = pin:CreateTexture()
-    pin.texture:SetAtlas('flightmaster_ancientwaygate-taxinode_neutral', true)
+    pin.texture:SetAtlas(ns.groups.ANCIENT_WAYGATES.atlas, true)
     pin.texture:SetAllPoints()
+    return pin
+end
+
+ns.AWG.ProcessTaxiNode = function(mapID, childMapID, taxiNode)
+    local fp = ns.map[mapID][childMapID][taxiNode.nodeID]
+    if not fp.pin then fp.pin = ns.AWG.CreatePin(taxiNode.nodeID) end
+    local pin = fp.pin
     pin:HookScript('OnEnter', function()
         GameTooltip:SetOwner(pin, 'ANCHOR_TOP')
         GameTooltip:AddLine(taxiNode.name, 1, 1, 1)
