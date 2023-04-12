@@ -4,5 +4,6 @@
   <Script file="zones\forbidden_reach.lua"/>
   <Script file="zones\ohnahran_plains.lua"/>
   <Script file="zones\thaldraszus.lua"/>
+  <script file="zones\the_primalist_future.lua"/>
   <Script file="zones\waking_shores.lua"/>
 </Ui>

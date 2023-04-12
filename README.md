@@ -9,6 +9,7 @@ A quick toggle menu will appear on the Dragon Isles map which allows you to quic
 This addon adds information to the Dragon Isles map for the following zones:
 
 * Patch 10.0.0 - The Waking Shores, Ohn'ahran Plains, The Azure Span, and Thaldraszus
+* Patch 10.0.5 - The Primalist Future
 * Patch 10.0.7 - The Forbidden Reach
 
 ### Dragon Isles
@@ -28,6 +29,10 @@ This addon adds information to the Dragon Isles map for the following zones:
 ### The Azure Span
 
 * Community Feast. Learn to become a [Soupervisor](https://www.wowhead.com/achievement=16443/soupervisor). Yes chef!
+
+### The Primalist Future
+
+* The Storm's Fury.  Learn more about [The Future We Make](https://www.wowhead.com/achievement=17342/the-future-we-make).
 
 ### The Forbidden Reach
 

@@ -15,9 +15,10 @@ L['addon_description'] = 'Настроить отображение значко
 
 L['ancient_waygate_label'] = '{spell:386485}'
 L['aylaag_camp_label'] = 'лагерь Айлааг'
+L['community_feast_label'] = '{spell:386441}'
 L['elemental_storm_label'] = '{spell:392768}'
 L['froststone_vault_storm_label'] = 'Изначальная буря в Ледокаменном хранилище'
 L['grand_hunt_label'] = 'Великая охота'
-L['community_feast_label'] = '{spell:386441}'
 L['siege_on_dragonbane_keep_label'] = '{spell:388945}'
+L['storms_fury_label'] = '{spell:76232}'
 L['tuskarr_fishing_hole_label'] = '{spell:388968}'

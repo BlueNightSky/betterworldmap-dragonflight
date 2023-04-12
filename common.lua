@@ -62,3 +62,9 @@ ns.groups.GRAND_HUNTS = {
     label = L['grand_hunt_label'],
     name = 'grand_hunt'
 }
+
+ns.groups.STORMS_FURY = {
+    atlas = 'ElementalStorm-Boss-Water',
+    label = L['storms_fury_label'],
+    name = 'storms_fury'
+}
