@@ -14,7 +14,8 @@ ns.map[ns.parentMapID] = {}
 ns.groups.ANCIENT_WAYGATES = {
     atlas = 'flightmaster_ancientwaygate-taxinode_neutral',
     label = L['ancient_waygate_label'],
-    name = 'ancient_waygate'
+    name = 'ancient_waygate',
+    type = 'flightpoint'
 }
 
 ns.groups.AYLAAG_CAMPS = {
