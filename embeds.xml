@@ -4,6 +4,7 @@
   <Script file="libs\HereBeDragons\HereBeDragons-2.0.lua"/>
   <Script file="libs\HereBeDragons\HereBeDragons-Pins-2.0.lua"/>
   <Include file="libs\AceAddon-3.0\AceAddon-3.0.xml"/>
+  <Include file="libs\AceEvent-3.0\AceEvent-3.0.xml"/>
   <Include file="libs\AceLocale-3.0\AceLocale-3.0.xml"/>
   <Include file="libs\Krowi_WorldMapButtons-1.4\Krowi_WorldMapButtons-1.4.xml"/>
   <Include file="libs\LibUIDropDownMenu\LibUIDropDownMenu.xml"/>

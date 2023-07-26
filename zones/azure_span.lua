@@ -1,136 +1,108 @@
--------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
--------------------------------------------------------------------------------
 local _, ns = ...
 local Map = ns.Map
 
--------------------------------------------------------------------------------
-
 local map = Map({id = 2024})
 
--------------------------------------------------------------------------------
 ------------------------------ ANCIENT WAYGATES -------------------------------
--------------------------------------------------------------------------------
 
 map[2838] = {
-    name = 'Cobalt Assembly',
     group = ns.groups.ANCIENT_WAYGATES,
     coordinates = 51466802
-}
+} -- Cobalt Assembly
 
 map[2837] = {
-    name = 'Vakthros',
     group = ns.groups.ANCIENT_WAYGATES,
     coordinates = 63966829
-}
+} -- Vakthros
 
--------------------------------------------------------------------------------
 ------------------------------- COMMUNITY FEAST -------------------------------
--------------------------------------------------------------------------------
 
 map[7218] = {
-    name = 'Community Feast - Before',
     group = ns.groups.COMMUNITY_FEAST
-}
+} -- Community Feast - Before
 
 map[7219] = {
-    name = 'Community Feast - During',
     group = ns.groups.COMMUNITY_FEAST
-}
+} -- Community Feast - During
 
 map[7220] = {
-    name = 'Community Feast - After',
     group = ns.groups.COMMUNITY_FEAST
-}
+} -- Community Feast - After
 
--------------------------------------------------------------------------------
 ------------------------------- ELEMENTAL STORM -------------------------------
--------------------------------------------------------------------------------
 
 map[7229] = {
-    name = 'Brakenhide Hollow - Thunderstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Brakenhide Hollow - Thunderstorm
 
 map[7230] = {
-    name = 'Brakenhide Hollow - Sandstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Brakenhide Hollow - Sandstorm
 
 map[7231] = {
-    name = 'Brakenhide Hollow - Firestorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Brakenhide Hollow - Firestorm
 
 map[7232] = {
-    name = 'Brakenhide Hollow - Snowstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Brakenhide Hollow - Snowstorm
 
 map[7233] = {
-    name = 'Cobalt Assembly - Thunderstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Cobalt Assembly - Thunderstorm
 
 map[7234] = {
-    name = 'Cobalt Assembly - Sandstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Cobalt Assembly - Sandstorm
 
 map[7235] = {
-    name = 'Cobalt Assembly - Firestorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Cobalt Assembly - Firestorm
 
 map[7236] = {
-    name = 'Cobalt Assembly - Snowstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Cobalt Assembly - Snowstorm
 
 map[7237] = {
-    name = 'Imbu - Thunderstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Imbu - Thunderstorm
 
 map[7238] = {
-    name = 'Imbu - Sandstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Imbu - Sandstorm
 
 map[7239] = {
-    name = 'Imbu - Firestorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Imbu - Firestorm
 
 map[7240] = {
-    name = 'Imbu - Snowstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Imbu - Snowstorm
 
--------------------------------------------------------------------------------
 -------------------------------- FISHING HOLE ---------------------------------
--------------------------------------------------------------------------------
 
 map[7266] = {
-    name = 'Grimtusks Fishing Hole',
     group = ns.groups.FISHING_HOLE
-}
+} -- Grimtusks Fishing Hole
 
--------------------------------------------------------------------------------
 --------------------------------- GRAND HUNTS ---------------------------------
--------------------------------------------------------------------------------
 
 map[7095] = {
-    name = 'Eastern Azure Span Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Eastern Azure Span Hunt
 
 map[7096] = {
-    name = 'Southern Azure Span Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Southern Azure Span Hunt
 
 map[7094] = {
-    name = 'Western Azure San Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Western Azure San Hunt
+
+-------------------------- ZARALEK CAVERN ENTRANCES ---------------------------
+
+map[7469] = {
+    group = ns.groups.ZARALEK_CAVERN_ENTRANCES,
+    passive = true
+} -- Lookout Breach

@@ -1,4 +1,4 @@
-## Interface: 100007
+## Interface: 100105
 ## Title: BetterWorldMap: Dragonflight
 ## Version: 03
 ## Notes: Add pins to world map for Dragonflight

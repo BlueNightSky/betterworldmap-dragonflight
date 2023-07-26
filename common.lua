@@ -1,6 +1,4 @@
--------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
--------------------------------------------------------------------------------
 local _, ns = ...
 local L = ns.locale
 
@@ -11,9 +9,7 @@ ns.parentMapID = 1978 -- Dragon Isles
 
 ns.map[ns.parentMapID] = {}
 
--------------------------------------------------------------------------------
 ----------------------------------- GROUPS ------------------------------------
--------------------------------------------------------------------------------
 
 ns.groups.ANCIENT_WAYGATES = {
     atlas = 'flightmaster_ancientwaygate-taxinode_neutral',
@@ -67,4 +63,16 @@ ns.groups.STORMS_FURY = {
     atlas = 'ElementalStorm-Boss-Water',
     label = L['storms_fury_label'],
     name = 'storms_fury'
+}
+
+ns.groups.TIME_RIFT = {
+    atlas = 'minimap-genericevent-hornicon',
+    label = L['time_rift_label'],
+    name = 'time_rift'
+}
+
+ns.groups.ZARALEK_CAVERN_ENTRANCES = {
+    atlas = 'CaveUnderground-Down',
+    label = L['zaralek_cavern_entrance_label'],
+    name = 'zaralek_cavern_entrance'
 }

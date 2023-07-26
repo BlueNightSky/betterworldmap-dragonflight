@@ -1,16 +1,13 @@
 local ADDON_NAME, _ = ...
 local L = LibStub('AceLocale-3.0'):NewLocale(ADDON_NAME, 'enUS', true)
 if not L then return end
+-- English translation by Wyldclaw US-Lightbringer
 
--------------------------------------------------------------------------------
 ----------------------------------- GLOBAL ------------------------------------
--------------------------------------------------------------------------------
 
 L['addon_description'] = 'Adjust icon display for this map.'
 
--------------------------------------------------------------------------------
 ----------------------------------- GROUPS ------------------------------------
--------------------------------------------------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'
 L['aylaag_camp_label'] = 'Aylaag Camp'
@@ -20,4 +17,6 @@ L['froststone_vault_storm_label'] = 'Froststone Vault Primal Storm'
 L['grand_hunt_label'] = 'Grand Hunt'
 L['siege_on_dragonbane_keep_label'] = '{spell:388945}'
 L['storms_fury_label'] = '{spell:76232}'
+L['time_rift_label'] = '{spell:409045}'
 L['tuskarr_fishing_hole_label'] = '{spell:388968}'
+L['zaralek_cavern_entrance_label'] = 'Zaralek Cavern'

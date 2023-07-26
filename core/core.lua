@@ -1,9 +1,7 @@
--------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
--------------------------------------------------------------------------------
 local ADDON_NAME, ns = ...
 
-local Addon = LibStub('AceAddon-3.0'):NewAddon(ADDON_NAME)
+local Addon = LibStub('AceAddon-3.0'):NewAddon(ADDON_NAME, 'AceEvent-3.0')
 local L = LibStub('AceLocale-3.0'):GetLocale(ADDON_NAME)
 
 ns.addon = Addon
@@ -19,18 +17,14 @@ ns.DDM = LibStub('LibUIDropDownMenu-4.0')
 
 _G[ADDON_NAME] = Addon
 
--------------------------------------------------------------------------------
 ------------------------------------- MAP -------------------------------------
--------------------------------------------------------------------------------
 
 ns.Map = function(attrs)
     ns.map[ns.parentMapID][attrs.id] = {}
     return ns.map[ns.parentMapID][attrs.id]
 end
 
--------------------------------------------------------------------------------
 ----------------------------------- OPTIONS -----------------------------------
--------------------------------------------------------------------------------
 
 ns.SetDefaultOptions = function()
     _G[ns.DB] = {}
@@ -43,9 +37,7 @@ ns.GetOpt = function(o) return _G[ns.DB][o] end
 
 ns.SetOpt = function(o) _G[ns.DB][o] = not _G[ns.DB][o] ns.addon:Refresh() end
 
--------------------------------------------------------------------------------
 ------------------------------------ TEXT -------------------------------------
--------------------------------------------------------------------------------
 
 ns.PrepareText = function(str)
     for type, id in str:gmatch('{(%l+):(%d+)(%l*)}') do
@@ -65,9 +57,7 @@ ns.RenderText = function(str)
     return str
 end
 
--------------------------------------------------------------------------------
 ------------------------------ WORLD MAP BUTTON -------------------------------
--------------------------------------------------------------------------------
 
 local WorldMapOptionsButtonMixin = {}
 _G[ADDON_NAME .. 'WorldMapOptionsButtonMixin'] = WorldMapOptionsButtonMixin
@@ -126,9 +116,7 @@ function WorldMapOptionsButtonMixin:InitializeDropDown()
     end
 end
 
--------------------------------------------------------------------------------
 ------------------------------------ ADDON ------------------------------------
--------------------------------------------------------------------------------
 
 function Addon:OnInitialize()
     if not _G[ns.DB] then ns:SetDefaultOptions() end
@@ -136,7 +124,11 @@ function Addon:OnInitialize()
     local template = ADDON_NAME .. 'WorldMapOptionsButtonTemplate'
     LibStub('Krowi_WorldMapButtons-1.4'):Add(template, 'DROPDOWNTOGGLEBUTTON')
 
-    ns.addon_name = 'BetterWorldMap: ' .. EJ_GetTierInfo(ns.expansion)
+    self:RegisterEvent('PLAYER_ENTERING_WORLD', function()
+        self:UnregisterEvent('PLAYER_ENTERING_WORLD')
+        local expansion_name = EJ_GetTierInfo(ns.expansion)
+        ns.addon_name = 'BetterWorldMap: ' .. expansion_name
+    end)
 
     for _, group in pairs(ns.groups) do ns.PrepareText(group.label) end
 end
@@ -145,5 +137,5 @@ function Addon:Refresh()
     for provider in next, WorldMapFrame.dataProviders do
         provider:RefreshAllData()
     end
-    ns.AWG.UpdateAncientWaygates(WorldMapFrame.mapID)
+    ns.FP.UpdateAllFlightPoints(WorldMapFrame.mapID)
 end

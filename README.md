@@ -11,12 +11,14 @@ This addon adds information to the Dragon Isles map for the following zones:
 * Patch 10.0.0 - The Waking Shores, Ohn'ahran Plains, The Azure Span, and Thaldraszus
 * Patch 10.0.5 - The Primalist Future
 * Patch 10.0.7 - The Forbidden Reach
+* Patch 10.1.5 - Zaralek Cavern
 
 ### Dragon Isles
 
 * Ancient Waygate locations in all zones. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
 * Elemental Storm locations in all zones. Learn to become a [Storm Chaster](https://www.wowhead.com/achievement=16490/storm-chaser).
 * Grand Hunt locations in all zones. Learn to become a [Hunt Master](https://www.wowhead.com/achievement=16540/hunt-master).
+* Zaralek Cavern cave entrances in all zones. Be sure to [Explore Zaralek Cavern](https://www.wowhead.com/achievement=17766/explore-zaralek-cavern).
 
 ### The Waking Shores
 
@@ -29,6 +31,10 @@ This addon adds information to the Dragon Isles map for the following zones:
 ### The Azure Span
 
 * Community Feast. Learn to become a [Soupervisor](https://www.wowhead.com/achievement=16443/soupervisor). Yes chef!
+
+### Thaldraszus
+
+* Time Rift. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
 
 ### The Primalist Future
 

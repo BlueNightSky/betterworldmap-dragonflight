@@ -1,11 +1,7 @@
--------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
--------------------------------------------------------------------------------
 local ADDON_NAME, ns = ...
 
--------------------------------------------------------------------------------
 ----------------------------------- HELPERS -----------------------------------
--------------------------------------------------------------------------------
 
 ns.GetXY = function(coord)
     return floor(coord / 10000) / 10000, (coord % 10000) / 10000
@@ -19,9 +15,11 @@ ns.IsValidID = function(childMapID, id)
     return ns.map[ns.parentMapID][childMapID][id] and true or false
 end
 
--------------------------------------------------------------------------------
+ns.IsGroupMember = function(childMapID, id, group)
+    return ns.map[ns.parentMapID][childMapID][id].group == group
+end
+
 ---------------------------------- AREA POIS ----------------------------------
--------------------------------------------------------------------------------
 
 ns.POI = {}
 
@@ -36,7 +34,16 @@ ns.POI.ProcessPOIInfo = function(self, map, mapID, childMapID, poiInfo)
     end
 end
 
-ns.POI.ProcessMapPOIs = function(self, map, mapID, childMapID)
+ns.POI.ProcessPassiveMapPOIs = function(self, map, mapID, childMapID)
+    for poiID, poiData in pairs(ns.map[mapID][childMapID]) do
+        if poiData.passive and poiData.passive == true then
+            local poiInfo = C_AreaPoiInfo.GetAreaPOIInfo(childMapID, poiID)
+            ns.POI.ProcessPOIInfo(self, map, mapID, childMapID, poiInfo)
+        end
+    end
+end
+
+ns.POI.ProcessActiveMapPOIs = function(self, map, mapID, childMapID)
     for _, poiID in next, C_AreaPoiInfo.GetAreaPOIForMap(childMapID) do
         local poiInfo = C_AreaPoiInfo.GetAreaPOIInfo(childMapID, poiID)
         if poiInfo and ns.IsValidID(childMapID, poiID) then
@@ -47,7 +54,8 @@ end
 
 ns.POI.ProcessChildMap = function(self, map, mapID)
     for childMapID in next, ns.map[mapID] do
-        ns.POI.ProcessMapPOIs(self, map, mapID, childMapID)
+        ns.POI.ProcessActiveMapPOIs(self, map, mapID, childMapID)
+        ns.POI.ProcessPassiveMapPOIs(self, map, mapID, childMapID)
     end
 end
 
@@ -67,25 +75,23 @@ for provider in next, WorldMapFrame.dataProviders do
     end
 end
 
--------------------------------------------------------------------------------
------------------------------- ANCIENT WAYGATES -------------------------------
--------------------------------------------------------------------------------
+-------------------------------- FLIGHT POINTS --------------------------------
 
-ns.AWG = {}
+ns.FP = {}
 
-ns.AWG.CreatePin = function(nodeID)
-    local pin = CreateFrame('Frame', 'BWM_Pin_' .. nodeID .. '_AW', nil)
+ns.FP.CreatePin = function(nodeID, group)
+    local pin = CreateFrame('Frame', 'BWM_PIN_FP_' .. nodeID, nil)
     pin:SetWidth(22)
     pin:SetHeight(22)
     pin.texture = pin:CreateTexture()
-    pin.texture:SetAtlas(ns.groups.ANCIENT_WAYGATES.atlas, true)
+    pin.texture:SetAtlas(group.atlas, true)
     pin.texture:SetAllPoints()
     return pin
 end
 
-ns.AWG.ProcessTaxiNode = function(mapID, childMapID, taxiNode)
+ns.FP.ProcessTaxiNode = function(mapID, childMapID, taxiNode, group)
     local fp = ns.map[mapID][childMapID][taxiNode.nodeID]
-    if not fp.pin then fp.pin = ns.AWG.CreatePin(taxiNode.nodeID) end
+    if not fp.pin then fp.pin = ns.FP.CreatePin(taxiNode.nodeID, group) end
     local pin = fp.pin
     pin:HookScript('OnEnter', function()
         GameTooltip:SetOwner(pin, 'ANCHOR_TOP')
@@ -100,30 +106,40 @@ ns.AWG.ProcessTaxiNode = function(mapID, childMapID, taxiNode)
     pin:Show()
 end
 
-ns.AWG.ProcessTaxiNodes = function(mapID, childMapID)
+ns.FP.ProcessTaxiNodes = function(mapID, childMapID, group)
     for _, taxiNode in next, C_TaxiMap.GetTaxiNodesForMap(childMapID) do
         if taxiNode and ns.IsValidID(childMapID, taxiNode.nodeID) then
-            ns.AWG.ProcessTaxiNode(mapID, childMapID, taxiNode)
+            if ns.IsGroupMember(childMapID, taxiNode.nodeID, group) then
+                ns.FP.ProcessTaxiNode(mapID, childMapID, taxiNode, group)
+            end
         end
     end
 end
 
-ns.AWG.ProcessChildMap = function(mapID)
+ns.FP.ProcessChildMap = function(mapID, group)
     for childMapID in next, ns.map[mapID] do
-        ns.AWG.ProcessTaxiNodes(mapID, childMapID)
+        ns.FP.ProcessTaxiNodes(mapID, childMapID, group)
     end
 end
 
-ns.AWG.UpdateAncientWaygates = function(mapID)
+ns.FP.UpdateFlightPoints = function(mapID, group)
     if mapID == ns.parentMapID then
-        if ns.IsGroupEnabled(ns.groups.ANCIENT_WAYGATES) then
-            ns.AWG.ProcessChildMap(mapID)
+        if ns.IsGroupEnabled(group) then
+            ns.FP.ProcessChildMap(mapID, group)
         else
             ns.PIN:RemoveAllWorldMapIcons(ADDON_NAME)
         end
     end
 end
 
+ns.FP.UpdateAllFlightPoints = function(mapID)
+    for _, group in pairs(ns.groups) do
+        if group.type and group.type == 'flightpoint' then
+            ns.FP.UpdateFlightPoints(mapID, group)
+        end
+    end
+end
+
 hooksecurefunc(WorldMapFrame, 'OnMapChanged', function()
-    ns.AWG.UpdateAncientWaygates(WorldMapFrame.mapID)
+    ns.FP.UpdateAllFlightPoints(WorldMapFrame.mapID)
 end)

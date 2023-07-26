@@ -1,96 +1,81 @@
--------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
--------------------------------------------------------------------------------
 local _, ns = ...
 local Map = ns.Map
 
--------------------------------------------------------------------------------
-
 local map = Map({id = 2023})
 
--------------------------------------------------------------------------------
 ------------------------------ ANCIENT WAYGATES -------------------------------
--------------------------------------------------------------------------------
 
 map[2840] = {
-    name = 'Shady Sanctuary',
     group = ns.groups.ANCIENT_WAYGATES,
     coordinates = 34705779
-}
+} -- Shady Sanctuary
 
 map[2839] = {
-    name = 'Ruszathar Reach',
     group = ns.groups.ANCIENT_WAYGATES,
     coordinates = 49765289
-}
+} -- Ruszathar Reach
 
--------------------------------------------------------------------------------
 -------------------------------- AYLAAG CAMPS ---------------------------------
--------------------------------------------------------------------------------
 
 map[7101] = {
-    name = 'Aylaag Camp - River Camp',
     group = ns.groups.AYLAAG_CAMPS
-}
+} -- Aylaag Camp - River Camp
 
 map[7102] = {
-    name = 'Aylaag Camp - Aylaag Outpost',
     group = ns.groups.AYLAAG_CAMPS
-}
+} -- Aylaag Camp - Aylaag Outpost
 
 map[7103] = {
-    name = 'Aylaag Camp - Eaglewatch Outpost',
     group = ns.groups.AYLAAG_CAMPS
-}
+} -- Aylaag Camp - Eaglewatch Outpost
 
--------------------------------------------------------------------------------
 ------------------------------- ELEMENTAL STORM -------------------------------
--------------------------------------------------------------------------------
 
 map[7221] = {
-    name = 'Nokhudon Hold - Thunderstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Nokhudon Hold - Thunderstorm
 
 map[7222] = {
-    name = 'Nokhudon Hold - Sandstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Nokhudon Hold - Sandstorm
 
 map[7223] = {
-    name = 'Nokhudon Hold - Firestorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Nokhudon Hold - Firestorm
 
 map[7224] = {
-    name = 'Nokhudon Hold - Snowstorm',
     group = ns.groups.ELEMENTAL_STORM
-}
+} -- Nokhudon Hold - Snowstorm
 
--------------------------------------------------------------------------------
 -------------------------------- FISHING HOLE ---------------------------------
--------------------------------------------------------------------------------
 
 map[7270] = {
-    name = 'Dragonsprings Fishing Hole',
     group = ns.groups.FISHING_HOLE
-}
+} -- Dragonsprings Fishing Hole
 
--------------------------------------------------------------------------------
 --------------------------------- GRAND HUNTS ---------------------------------
--------------------------------------------------------------------------------
 
 map[7098] = {
-    name = 'Northern Ohn\'ahran Plains Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Northern Ohn'ahran Plains Hunt
 
 map[7089] = {
-    name = 'Western Ohn\'ahran Plains Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Western Ohn'ahran Plains Hunt
 
 map[7090] = {
-    name = 'Eastern Ohn\'ahran Plains Hunt',
     group = ns.groups.GRAND_HUNTS
-}
+} -- Eastern Ohn'ahran Plains Hunt
+
+-------------------------- ZARALEK CAVERN ENTRANCES ---------------------------
+
+map[7438] = {
+    group = ns.groups.ZARALEK_CAVERN_ENTRANCES,
+    passive = true
+} -- The Throughway
+
+map[7467] = {
+    group = ns.groups.ZARALEK_CAVERN_ENTRANCES,
+    passive = true
+} -- Old Loamm Road
