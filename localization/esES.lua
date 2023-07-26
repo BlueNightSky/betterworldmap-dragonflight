@@ -1,7 +1,7 @@
 local ADDON_NAME, _ = ...
 local L = LibStub('AceLocale-3.0'):NewLocale(ADDON_NAME, 'esES')
 if not L then return end
--- Spanish translation by Krovikan EU-Minahonda
+-- Spanish translation by (EU) Krovikan-Minahonda
 
 ----------------------------------- GLOBAL ------------------------------------
 

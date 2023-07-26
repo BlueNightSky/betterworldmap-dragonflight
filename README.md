@@ -56,7 +56,7 @@ This addon has been (mostly) translated to the following languages:
 * `esES` - Spanish (Spain) (thanks (EU) Krovikan-Minahonda!)
 * `frFR` - French (thanks Lightuky EU-Khaz Modan!)
 * `koKR` - Korean (thanks soaa!)
-* `ruRU` - Russian (thanks Hubbotu!)
+* `ruRU` - Russian (thanks ZamestoTV!)
 * `zhCN` - Chinese (Simplified) (thanks Adavak!)
 * `zhTW` - Chinese (Traditional) (thanks mcc1!)
 
