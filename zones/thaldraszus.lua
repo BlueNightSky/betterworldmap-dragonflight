@@ -9,7 +9,7 @@ local map = Map({id = 2025})
 map[2834] = {
     group = ns.groups.ANCIENT_WAYGATES,
     coordinates = 60925612
-} -- Eons Fringe
+} -- Eon's Fringe
 
 map[2836] = {
     group = ns.groups.ANCIENT_WAYGATES,
