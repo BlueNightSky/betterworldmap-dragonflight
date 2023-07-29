@@ -19,18 +19,9 @@ map[7412] = {
 
 ------------------------ FROSTSTONE VAULT PRIMAL STORM ------------------------
 
-map[7408] = {
-    group = ns.groups.FROSTSTONE_VAULT_STORM
-} -- Froststone Vault Primal Storm - Air
+local FrostStoneVaultStorm = {group = ns.groups.FROSTSTONE_VAULT_STORM}
 
-map[7409] = {
-    group = ns.groups.FROSTSTONE_VAULT_STORM
-} -- Froststone Vault Primal Storm - Earth
-
-map[7410] = {
-    group = ns.groups.FROSTSTONE_VAULT_STORM
-} -- Froststone Vault Primal Storm - Fire
-
-map[7411] = {
-    group = ns.groups.FROSTSTONE_VAULT_STORM
-} -- Froststone Vault Primal Storm - Water
+map[7408] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Air
+map[7409] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Earth
+map[7410] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Fire
+map[7411] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Water

@@ -3,6 +3,7 @@ local _, ns = ...
 local Map = ns.Map
 
 local map = Map({id = 2025})
+local val = Map({id = 2112})
 
 ------------------------------ ANCIENT WAYGATES -------------------------------
 
@@ -24,37 +25,16 @@ map[7264] = {
 
 ------------------------------- ELEMENTAL STORM -------------------------------
 
-map[7245] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Tyrhold - Thunderstorm
+local ElementalStorm = {group = ns.groups.ELEMENTAL_STORM}
 
-map[7246] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Tyrhold - Sandstorm
-
-map[7247] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Tyrhold - Firestorm
-
-map[7248] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Tyrhold - Snowstorm
-
-map[7298] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Primalist Future - Thunderstorm
-
-map[7299] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Primalist Future - Sandstorm
-
-map[7300] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Primalist Future - Firestorm
-
-map[7301] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Primalist Future - Snowstorm
+map[7245] = ElementalStorm -- Tyrhold - Thunderstorm
+map[7246] = ElementalStorm -- Tyrhold - Sandstorm
+map[7247] = ElementalStorm -- Tyrhold - Firestorm
+map[7248] = ElementalStorm -- Tyrhold - Snowstorm
+map[7298] = ElementalStorm -- Primalist Future - Thunderstorm
+map[7299] = ElementalStorm -- Primalist Future - Sandstorm
+map[7300] = ElementalStorm -- Primalist Future - Firestorm
+map[7301] = ElementalStorm -- Primalist Future - Snowstorm
 
 -------------------------------- FISHING HOLE ---------------------------------
 
@@ -64,13 +44,16 @@ map[7271] = {
 
 --------------------------------- GRAND HUNTS ---------------------------------
 
-map[7097] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Southern Thaldraszus Hunt
+local GrandHunt = {group = ns.groups.GRAND_HUNTS}
 
-map[7099] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Northern Thaldraszus Hunt
+map[7097] = GrandHunt -- Southern Thaldraszus Hunt
+map[7099] = GrandHunt -- Northern Thaldraszus Hunt
+
+--------------------------------- GREAT VAULT ---------------------------------
+
+val[7455] = {
+    group = ns.groups.GREAT_VAULT
+} -- Great Vault
 
 ---------------------------------- TIME RIFT ----------------------------------
 

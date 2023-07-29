@@ -18,17 +18,11 @@ map[2841] = {
 
 ------------------------------ DRAGONBANE SIEGE -------------------------------
 
-map[7267] = {
-    group = ns.groups.DRAGONBANE_SIEGE
-} -- Siege on Dragonbane Keep - Before
+local DragonbaneSiege = {group = ns.groups.DRAGONBANE_SIEGE}
 
-map[7104] = {
-    group = ns.groups.DRAGONBANE_SIEGE
-} -- Siege on Dragonbane Keep - During
-
-map[7413] = {
-    group = ns.groups.DRAGONBANE_SIEGE
-} -- Siege on Dragonbane Keep - After
+map[7267] = DragonbaneSiege -- Siege on Dragonbane Keep - Before
+map[7104] = DragonbaneSiege -- Siege on Dragonbane Keep - During
+map[7413] = DragonbaneSiege -- Siege on Dragonbane Keep - After
 
 ------------------------------ DRAGONRIDING RALLY -----------------------------
 
@@ -38,74 +32,32 @@ map[7261] = {
 
 ------------------------------- ELEMENTAL STORM -------------------------------
 
-map[7249] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Dragonbane Keep - Thunderstorm
+local ElementalStorm = {group = ns.groups.ELEMENTAL_STORM}
 
-map[7250] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Dragonbane Keep - Sandstorm
-
-map[7251] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Dragonbane Keep - Firestorm
-
-map[7252] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Dragonbane Keep - Snowstorm
-
-map[7253] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Slagmire - Thunderstorm
-
-map[7254] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Slagmire - Sandstorm
-
-map[7255] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Slagmire - Firestorm
-
-map[7256] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Slagmire - Snowstorm
-
-map[7257] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Scalecracker Keep - Thunderstorm
-
-map[7258] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Scalecracker Keep - Sandstorm
-
-map[7259] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Scalecracker Keep - Firestorm
-
-map[7260] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Scalecracker Keep - Snowstorm
+map[7249] = ElementalStorm -- Dragonbane Keep - Thunderstorm
+map[7250] = ElementalStorm -- Dragonbane Keep - Sandstorm
+map[7251] = ElementalStorm -- Dragonbane Keep - Firestorm
+map[7252] = ElementalStorm -- Dragonbane Keep - Snowstorm
+map[7253] = ElementalStorm -- Slagmire - Thunderstorm
+map[7254] = ElementalStorm -- Slagmire - Sandstorm
+map[7255] = ElementalStorm -- Slagmire - Firestorm
+map[7256] = ElementalStorm -- Slagmire - Snowstorm
+map[7257] = ElementalStorm -- Scalecracker Keep - Thunderstorm
+map[7258] = ElementalStorm -- Scalecracker Keep - Sandstorm
+map[7259] = ElementalStorm -- Scalecracker Keep - Firestorm
+map[7260] = ElementalStorm -- Scalecracker Keep - Snowstorm
 
 -------------------------------- FISHING HOLE ---------------------------------
 
-map[7086] = {
-    group = ns.groups.FISHING_HOLE
-} -- River Mouth Fishing Hole
+local FishingHole = {group = ns.groups.FISHING_HOLE}
 
-map[7272] = {
-    group = ns.groups.FISHING_HOLE
-} -- Burning Ascent Fishing Hole
+map[7086] = FishingHole -- River Mouth Fishing Hole
+map[7272] = FishingHole -- Burning Ascent Fishing Hole
 
 --------------------------------- GRAND HUNTS ---------------------------------
 
-map[7091] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Southern Waking Shores Hunt
+local GrandHunt = {group = ns.groups.GRAND_HUNTS}
 
-map[7092] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Eastern Waking Shores Hunt
-
-map[7093] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Northern Waking Shores Hunt
+map[7091] = GrandHunt -- Southern Waking Shores Hunt
+map[7092] = GrandHunt -- Eastern Waking Shores Hunt
+map[7093] = GrandHunt -- Northern Waking Shores Hunt

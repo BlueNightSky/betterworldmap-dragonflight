@@ -38,7 +38,7 @@ ns.groups.DRAGONBANE_SIEGE = {
 
 ns.groups.DRAGONRIDING_RALLY = {
     atlas = 'racing',
-    label = 'Dragondriding Rally',
+    label = L['dragonriding_rally_label'],
     name = 'dragonriding_rally'
 }
 
@@ -64,6 +64,12 @@ ns.groups.GRAND_HUNTS = {
     atlas = 'minimap-genericevent-hornicon',
     label = L['grand_hunt_label'],
     name = 'grand_hunt'
+}
+
+ns.groups.GREAT_VAULT = {
+    atlas = 'greatvault-dragonflight-32x32',
+    label = L['great_vault_label'],
+    name = 'great_vault'
 }
 
 ns.groups.STORMS_FURY = {

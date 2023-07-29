@@ -1,4 +1,4 @@
-**A addon for the Dragonflight expansion. It will add icons for points of interest to the Dragon Isles world map.**
+**An addon for the Dragonflight expansion. It will add icons for points of interest to the Dragon Isles world map.**
 
 Now available on CurseForge! [BetterWorldMap: Dragonflight](https://www.curseforge.com/wow/addons/betterworldmap-dragonflight)
 
@@ -16,13 +16,15 @@ This addon adds information to the Dragon Isles map for the following zones:
 ### Dragon Isles
 
 * Ancient Waygate locations in all zones. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
+* Dragonriding Rally. Race against other racers in [Dragonriding](https://www.wowhead.com/guide/dragonriding/races-overview-rewards).
 * Elemental Storm locations in all zones. Learn to become a [Storm Chaster](https://www.wowhead.com/achievement=16490/storm-chaser).
+* Tuskarr Fishing Hole locations. Become a [Tuskarr fishing expert](https://www.wowhead.com/guide/professions/fishing/iskaara-tuskarr-fishing-holes).
 * Grand Hunt locations in all zones. Learn to become a [Hunt Master](https://www.wowhead.com/achievement=16540/hunt-master).
 * Zaralek Cavern cave entrances in all zones. Be sure to [Explore Zaralek Cavern](https://www.wowhead.com/achievement=17766/explore-zaralek-cavern).
 
 ### The Waking Shores
 
-* Siege on Dragonbane Keep. Learn more about the [Siege on Dragonbane Keep](https://www.wowhead.com/achievement=16411/siege-on-dragonbane-keep-home-sweet-home).
+* Siege on Dragonbane Keep location. Learn more about the [Siege on Dragonbane Keep](https://www.wowhead.com/achievement=16411/siege-on-dragonbane-keep-home-sweet-home).
 
 ### Ohn'ahran Plains
 
@@ -30,15 +32,16 @@ This addon adds information to the Dragon Isles map for the following zones:
 
 ### The Azure Span
 
-* Community Feast. Learn to become a [Soupervisor](https://www.wowhead.com/achievement=16443/soupervisor). Yes chef!
+* Community Feast location. Learn to become a [Soupervisor](https://www.wowhead.com/achievement=16443/soupervisor). Yes chef!
 
 ### Thaldraszus
 
-* Time Rift. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
+* Great Vault location. Get your weekly reward at [The Great Vault](https://www.wowhead.com/quest=72354/the-great-vault).
+* Time Rift location. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
 
 ### The Primalist Future
 
-* The Storm's Fury.  Learn more about [The Future We Make](https://www.wowhead.com/achievement=17342/the-future-we-make).
+* The Storm's Fury location.  Learn more about [The Future We Make](https://www.wowhead.com/achievement=17342/the-future-we-make).
 
 ### The Forbidden Reach
 
