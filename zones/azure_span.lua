@@ -30,6 +30,12 @@ map[7220] = {
     group = ns.groups.COMMUNITY_FEAST
 } -- Community Feast - After
 
+------------------------------ DRAGONRIDING RALLY -----------------------------
+
+map[7263] = {
+    group = ns.groups.DRAGONRIDING_RALLY
+} -- Azure Span Rally
+
 ------------------------------- ELEMENTAL STORM -------------------------------
 
 map[7229] = {

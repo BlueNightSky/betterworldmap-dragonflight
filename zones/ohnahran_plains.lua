@@ -30,6 +30,12 @@ map[7103] = {
     group = ns.groups.AYLAAG_CAMPS
 } -- Aylaag Camp - Eaglewatch Outpost
 
+------------------------------ DRAGONRIDING RALLY -----------------------------
+
+map[7262] = {
+    group = ns.groups.DRAGONRIDING_RALLY
+} -- Ohn'ahran Plains Rally
+
 ------------------------------- ELEMENTAL STORM -------------------------------
 
 map[7221] = {

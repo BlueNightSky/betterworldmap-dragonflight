@@ -30,6 +30,12 @@ map[7413] = {
     group = ns.groups.DRAGONBANE_SIEGE
 } -- Siege on Dragonbane Keep - After
 
+------------------------------ DRAGONRIDING RALLY -----------------------------
+
+map[7261] = {
+    group = ns.groups.DRAGONRIDING_RALLY
+} -- Waking Shores Rally
+
 ------------------------------- ELEMENTAL STORM -------------------------------
 
 map[7249] = {

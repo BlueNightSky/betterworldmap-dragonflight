@@ -16,6 +16,12 @@ map[2836] = {
     coordinates = 64934099
 } -- Algeth'era
 
+------------------------------ DRAGONRIDING RALLY -----------------------------
+
+map[7264] = {
+    group = ns.groups.DRAGONRIDING_RALLY
+} -- Thaldraszus Rally
+
 ------------------------------- ELEMENTAL STORM -------------------------------
 
 map[7245] = {

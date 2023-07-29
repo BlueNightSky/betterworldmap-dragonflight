@@ -36,6 +36,12 @@ ns.groups.DRAGONBANE_SIEGE = {
     name = 'siege_on_dragonbane_keep'
 }
 
+ns.groups.DRAGONRIDING_RALLY = {
+    atlas = 'racing',
+    label = 'Dragondriding Rally',
+    name = 'dragonriding_rally'
+}
+
 ns.groups.ELEMENTAL_STORM = {
     atlas = 'ElementalStorm-Lesser-Fire',
     label = L['elemental_storm_label'],
