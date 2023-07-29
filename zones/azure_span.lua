@@ -18,17 +18,11 @@ map[2837] = {
 
 ------------------------------- COMMUNITY FEAST -------------------------------
 
-map[7218] = {
-    group = ns.groups.COMMUNITY_FEAST
-} -- Community Feast - Before
+local CommunityFeast = {group = ns.groups.COMMUNITY_FEAST}
 
-map[7219] = {
-    group = ns.groups.COMMUNITY_FEAST
-} -- Community Feast - During
-
-map[7220] = {
-    group = ns.groups.COMMUNITY_FEAST
-} -- Community Feast - After
+map[7218] = CommunityFeast -- Community Feast - Before
+map[7219] = CommunityFeast -- Community Feast - During
+map[7220] = CommunityFeast -- Community Feast - After
 
 ------------------------------ DRAGONRIDING RALLY -----------------------------
 
@@ -38,53 +32,20 @@ map[7263] = {
 
 ------------------------------- ELEMENTAL STORM -------------------------------
 
-map[7229] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Brakenhide Hollow - Thunderstorm
+local ElementalStorm = {group = ns.groups.ELEMENTAL_STORM}
 
-map[7230] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Brakenhide Hollow - Sandstorm
-
-map[7231] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Brakenhide Hollow - Firestorm
-
-map[7232] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Brakenhide Hollow - Snowstorm
-
-map[7233] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Cobalt Assembly - Thunderstorm
-
-map[7234] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Cobalt Assembly - Sandstorm
-
-map[7235] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Cobalt Assembly - Firestorm
-
-map[7236] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Cobalt Assembly - Snowstorm
-
-map[7237] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Imbu - Thunderstorm
-
-map[7238] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Imbu - Sandstorm
-
-map[7239] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Imbu - Firestorm
-
-map[7240] = {
-    group = ns.groups.ELEMENTAL_STORM
-} -- Imbu - Snowstorm
+map[7229] = ElementalStorm -- Brakenhide Hollow - Thunderstorm
+map[7230] = ElementalStorm -- Brakenhide Hollow - Sandstorm
+map[7231] = ElementalStorm -- Brakenhide Hollow - Firestorm
+map[7232] = ElementalStorm -- Brakenhide Hollow - Snowstorm
+map[7233] = ElementalStorm -- Cobalt Assembly - Thunderstorm
+map[7234] = ElementalStorm -- Cobalt Assembly - Sandstorm
+map[7235] = ElementalStorm -- Cobalt Assembly - Firestorm
+map[7236] = ElementalStorm -- Cobalt Assembly - Snowstorm
+map[7237] = ElementalStorm -- Imbu - Thunderstorm
+map[7238] = ElementalStorm -- Imbu - Sandstorm
+map[7239] = ElementalStorm -- Imbu - Firestorm
+map[7240] = ElementalStorm -- Imbu - Snowstorm
 
 -------------------------------- FISHING HOLE ---------------------------------
 
@@ -94,17 +55,11 @@ map[7266] = {
 
 --------------------------------- GRAND HUNTS ---------------------------------
 
-map[7095] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Eastern Azure Span Hunt
+local GrandHunt = {group = ns.groups.GRAND_HUNTS}
 
-map[7096] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Southern Azure Span Hunt
-
-map[7094] = {
-    group = ns.groups.GRAND_HUNTS
-} -- Western Azure San Hunt
+map[7095] = GrandHunt -- Eastern Azure Span Hunt
+map[7096] = GrandHunt -- Southern Azure Span Hunt
+map[7094] = GrandHunt -- Western Azure San Hunt
 
 -------------------------- ZARALEK CAVERN ENTRANCES ---------------------------
 
