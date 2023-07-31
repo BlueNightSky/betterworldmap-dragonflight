@@ -5,6 +5,7 @@
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
 ## SavedVariables: BetterWorldMap_DragonflightDB
+## IconTexture: 4640486
 
 embeds.xml
 core/core.xml
