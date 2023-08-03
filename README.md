@@ -37,15 +37,16 @@ This addon adds information to the Dragon Isles map for the following zones:
 ### Thaldraszus
 
 * Great Vault location. Get your weekly reward at [The Great Vault](https://www.wowhead.com/quest=72354/the-great-vault).
-* Time Rift location. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
-
-### The Primalist Future
-
 * The Storm's Fury location.  Learn more about [The Future We Make](https://www.wowhead.com/achievement=17342/the-future-we-make).
+* Time Rift location. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
 
 ### The Forbidden Reach
 
 * Froststone Vault Primal Storm location. Learn more about [Under the Weather](https://www.wowhead.com/achievement=17540/under-the-weather).
+
+### Zaralek Cavern
+
+* Researchers Under Fire location. Learn more about the [Researchers Under Fire](https://www.wowhead.com/guide/zaralek-cavern#weekly-event-researchers-under-fire) event.
 
 ## Limitations
 
