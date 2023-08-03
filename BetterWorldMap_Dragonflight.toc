@@ -1,11 +1,11 @@
 ## Interface: 100105
 ## Title: BetterWorldMap: Dragonflight
-## Version: 04
+## Version: 05
 ## Notes: Add pins to world map for Dragonflight
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
 ## SavedVariables: BetterWorldMap_DragonflightDB
-## IconTexture: 4640486
+## IconTexture: 4640498
 
 embeds.xml
 core/core.xml
