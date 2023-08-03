@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = '이 지도의 아이콘 표시 조정.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = '용의 섬'
+L['zone_the_waking_shores'] = '깨어나는 해안'
+L['zone_ohnahran_plains'] = '온아라 평야'
+L['zone_azure_span'] = '하늘빛 평원'
+L['zone_thaldraszus'] = '탈드라서스'
+L['zone_the_forbidden_reach'] = '금지된 해안'
+L['zone_zaralek_cavern'] = '자랄레크 동굴'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'

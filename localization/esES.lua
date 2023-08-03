@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = 'Ajustar la visualización de iconos para este mapa.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = 'Islas Dragón'
+L['zone_the_waking_shores'] = 'Orillas del Despertar'
+L['zone_ohnahran_plains'] = 'Llanuras de Ohn\'ahra'
+L['zone_azure_span'] = 'Tierras Azures'
+L['zone_thaldraszus'] = 'Thaldraszus'
+L['zone_the_forbidden_reach'] = 'El Confín Olvidado'
+L['zone_zaralek_cavern'] = 'Caverna Zaralek'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'

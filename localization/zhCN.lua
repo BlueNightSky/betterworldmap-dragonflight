@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = 'Adjust icon display for this map.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = '巨龙群岛'
+L['zone_the_waking_shores'] = '觉醒海岸'
+L['zone_ohnahran_plains'] = '欧恩哈拉平原'
+L['zone_azure_span'] = '碧蓝林海'
+L['zone_thaldraszus'] = '索德拉苏斯'
+L['zone_the_forbidden_reach'] = '禁忌离岛'
+L['zone_zaralek_cavern'] = '查拉雷克洞窟'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'

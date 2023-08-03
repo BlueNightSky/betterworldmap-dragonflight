@@ -26,10 +26,15 @@ ns.POI = {}
 ns.POI.ProcessPOIInfo = function(self, map, mapID, childMapID, poiInfo)
     local poi = ns.map[mapID][childMapID][poiInfo.areaPoiID]
     if ns.IsGroupEnabled(poi.group) then
-        local oX, oY = poiInfo.position:GetXY()
-        local nX, nY = ns.HBD:TranslateZoneCoordinates(oX, oY, childMapID, mapID)
+        if poi.coordinates then
+            local x, y = ns.GetXY(poi.coordinates)
+            poiInfo.position:SetXY(x, y)
+        else
+            local oX, oY = poiInfo.position:GetXY()
+            local nX, nY = ns.HBD:TranslateZoneCoordinates(oX, oY, childMapID, mapID)
+            poiInfo.position:SetXY(nX, nY)
+        end
         poiInfo.dataProvider = self
-        poiInfo.position:SetXY(nX, nY)
         map:AcquirePin(self:GetPinTemplate(), poiInfo)
     end
 end
@@ -38,7 +43,9 @@ ns.POI.ProcessPassiveMapPOIs = function(self, map, mapID, childMapID)
     for poiID, poiData in pairs(ns.map[mapID][childMapID]) do
         if poiData.passive and poiData.passive == true then
             local poiInfo = C_AreaPoiInfo.GetAreaPOIInfo(childMapID, poiID)
-            ns.POI.ProcessPOIInfo(self, map, mapID, childMapID, poiInfo)
+            if poiInfo then
+                ns.POI.ProcessPOIInfo(self, map, mapID, childMapID, poiInfo)
+            end
         end
     end
 end

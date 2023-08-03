@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = 'Régler l\'affichage des icônes pour cette carte.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = ''
+L['zone_the_waking_shores'] = 'Rivages de l’Éveil'
+L['zone_ohnahran_plains'] = 'Plaines d’Ohn’ahra'
+L['zone_azure_span'] = 'Travée d’Azur'
+L['zone_thaldraszus'] = 'Thaldraszus'
+L['zone_the_forbidden_reach'] = 'Confins Interdits'
+L['zone_zaralek_cavern'] = 'Grotte de Zaralek'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'

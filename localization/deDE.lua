@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = 'Adjust icon display for this map.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = 'Dracheninseln'
+L['zone_the_waking_shores'] = 'Die Küste des Erwachens'
+L['zone_ohnahran_plains'] = 'Ebenen von Ohn\'ahra'
+L['zone_azure_span'] = 'Das Azurblaue Gebirge'
+L['zone_thaldraszus'] = 'Thaldraszus'
+L['zone_the_forbidden_reach'] = 'Die Verbotene Insel'
+L['zone_zaralek_cavern'] = 'Zaralekhöhle'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'

@@ -97,21 +97,25 @@ end
 function WorldMapOptionsButtonMixin:InitializeDropDown()
     local mapID = self:GetParent():GetMapID()
     if mapID == ns.parentMapID then
-        local groupsSorted = {}
-        for k, _ in pairs(ns.groups) do table.insert(groupsSorted, k) end
-        table.sort(groupsSorted)
-        for _, v in ipairs(groupsSorted) do
-            local group = ns.groups[v]
-            local atlas = CreateAtlasMarkup(group.atlas, 20, 20)
+        for _, section in ipairs(ns.menuGroups) do
             ns.DDM:UIDropDownMenu_AddButton({
-                text = atlas .. ' ' .. ns.RenderText(group.label),
-                isNotRadio = true,
-                keepShownOnClick = true,
-                checked = ns.GetOpt('enable_' .. group.name),
-                func = function()
-                    ns.SetOpt('enable_' .. group.name)
-                end
+                isTitle = true,
+                text = section.title,
+                notClickable = 1,
+                notCheckable = 1
             })
+            for _, group in ipairs(section.groups) do
+                local atlas = CreateAtlasMarkup(group.atlas, 20, 20)
+                ns.DDM:UIDropDownMenu_AddButton({
+                    text = atlas .. ' ' .. ns.RenderText(group.label),
+                    isNotRadio = true,
+                    keepShownOnClick = true,
+                    checked = ns.GetOpt('enable_' .. group.name),
+                    func = function()
+                        ns.SetOpt('enable_' .. group.name)
+                    end
+                })
+            end
         end
     end
 end

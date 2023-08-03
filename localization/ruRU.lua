@@ -7,6 +7,16 @@ if not L then return end
 
 L['addon_description'] = 'Настроить отображение значков для этой карты.'
 
+------------------------------------ ZONES ------------------------------------
+
+L['zone_dragon_isles'] = 'Драконьи острова'
+L['zone_the_waking_shores'] = 'Берега Пробуждения'
+L['zone_ohnahran_plains'] = 'Равнины Он\'ары'
+L['zone_azure_span'] = 'Лазурный Простор'
+L['zone_thaldraszus'] = 'Тальдразус'
+L['zone_the_forbidden_reach'] = 'Запретный край'
+L['zone_zaralek_cavern'] = 'Пещера Заралек'
+
 ----------------------------------- GROUPS ------------------------------------
 
 L['ancient_waygate_label'] = '{spell:386485}'
