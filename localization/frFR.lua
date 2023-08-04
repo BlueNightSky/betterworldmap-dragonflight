@@ -9,7 +9,7 @@ L['addon_description'] = 'Régler l\'affichage des icônes pour cette carte.'
 
 ------------------------------------ ZONES ------------------------------------
 
-L['zone_dragon_isles'] = ''
+L['zone_dragon_isles'] = 'Îles aux Dragons'
 L['zone_the_waking_shores'] = 'Rivages de l’Éveil'
 L['zone_ohnahran_plains'] = 'Plaines d’Ohn’ahra'
 L['zone_azure_span'] = 'Travée d’Azur'
