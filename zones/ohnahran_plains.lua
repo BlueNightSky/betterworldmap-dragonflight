@@ -4,6 +4,12 @@ local Map = ns.Map
 
 local map = Map({id = 2023})
 
+----------------------------------- MARUUKAI ----------------------------------
+
+map[7392] = {
+    group = ns.groups.FACTION_CENTAUR
+} -- Maruukai
+
 ------------------------------ ANCIENT WAYGATES -------------------------------
 
 map[2840] = {

@@ -4,6 +4,12 @@ local Map = ns.Map
 
 local map = Map({id = 2022})
 
+----------------------------- DRAGONSCALE BASECAMP ----------------------------
+
+map[7365] = {
+    group = ns.groups.FACTION_EXPEDITION
+} -- Dragonscale Basecamp
+
 ------------------------------ ANCIENT WAYGATES -------------------------------
 
 map[2842] = {

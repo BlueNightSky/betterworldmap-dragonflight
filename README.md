@@ -24,18 +24,22 @@ This addon adds information to the Dragon Isles map for the following zones:
 
 ### The Waking Shores
 
+* Dragonscale Basecamp location. Learn more about the [Dragonscale Expedition](https://www.wowhead.com/faction=2507/dragonscale-expedition).
 * Siege on Dragonbane Keep location. Learn more about the [Siege on Dragonbane Keep](https://www.wowhead.com/achievement=16411/siege-on-dragonbane-keep-home-sweet-home).
 
 ### Ohn'ahran Plains
 
+* Maruukai location. Learn more about the [Maruuk Centaur](https://www.wowhead.com/faction=2503/maruuk-centaur).
 * Aylaag Camp locations. Learn more about the [The Ohn'ahran Trail](https://www.wowhead.com/achievement=16462/the-ohnahran-trail).
 
 ### The Azure Span
 
+* Iskaara location. Learn more about the [Iskaara Tuskarr](https://www.wowhead.com/faction=2511/iskaara-tuskarr).
 * Community Feast location. Learn to become a [Soupervisor](https://www.wowhead.com/achievement=16443/soupervisor). Yes chef!
 
 ### Thaldraszus
 
+* The Seat of the Aspects location. Learn more about the [Valdrakken Accord](https://www.wowhead.com/faction=2510/valdrakken-accord).
 * Great Vault location. Get your weekly reward at [The Great Vault](https://www.wowhead.com/quest=72354/the-great-vault).
 * The Storm's Fury location.  Learn more about [The Future We Make](https://www.wowhead.com/achievement=17342/the-future-we-make).
 * Time Rift location. Learn to become a [Chronograde Connoisseur](https://www.wowhead.com/achievement=18637/chronograde-connoisseur).
@@ -46,6 +50,7 @@ This addon adds information to the Dragon Isles map for the following zones:
 
 ### Zaralek Cavern
 
+* Loamm location. Learn more about the [Loamm Niffen](https://www.wowhead.com/faction=2564/loamm-niffen).
 * Researchers Under Fire location. Learn more about the [Researchers Under Fire](https://www.wowhead.com/guide/zaralek-cavern#weekly-event-researchers-under-fire) event.
 
 ## Limitations

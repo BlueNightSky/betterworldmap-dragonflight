@@ -4,6 +4,12 @@ local Map = ns.Map
 
 local map = Map({id = 2024})
 
+----------------------------------- ISKAARA -----------------------------------
+
+map[7393] = {
+    group = ns.groups.FACTION_TUSKARR
+} -- Iskaara
+
 ------------------------------ ANCIENT WAYGATES -------------------------------
 
 map[2838] = {

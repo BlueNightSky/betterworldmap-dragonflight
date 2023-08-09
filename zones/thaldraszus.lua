@@ -5,6 +5,12 @@ local Map = ns.Map
 local map = Map({id = 2025})
 local val = Map({id = 2112})
 
+--------------------------- THE SEAT OF THE ASPECTS ---------------------------
+
+map[7391] = {
+    group = ns.groups.FACTION_VALDRAKKEN
+} -- The Seat of the Aspects
+
 ------------------------------ ANCIENT WAYGATES -------------------------------
 
 map[2834] = {

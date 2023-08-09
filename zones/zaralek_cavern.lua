@@ -4,6 +4,13 @@ local Map = ns.Map
 
 local map = Map({id = 2133})
 
+------------------------------------ LOAMM ------------------------------------
+
+map[7489] = {
+    group = ns.groups.FACTION_NIFFEN,
+    coordinates = 97248274
+} -- Loamm
+
 --------------------------- RESEARCHERS UNDER FIRE ----------------------------
 
 local ResearchersUnderFire = {
