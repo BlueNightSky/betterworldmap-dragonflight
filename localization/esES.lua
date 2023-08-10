@@ -19,7 +19,7 @@ L['zone_dragon_isles'] = 'Islas Dragón'
 
 ------------------------------- THE WAKING SHORE ------------------------------
 
-L['faction_expedition'] = 'Dragonscale Basecamp'
+L['faction_expedition'] = 'Campamento Base Dragontina'
 L['siege_on_dragonbane_keep_label'] = '{spell:388945}'
 L['zone_the_waking_shores'] = 'Orillas del Despertar'
 
@@ -37,7 +37,7 @@ L['zone_azure_span'] = 'Tierras Azures'
 
 --------------------------------- THALDRASZUS ---------------------------------
 
-L['faction_valdrakken'] = 'The Seat of the Aspects'
+L['faction_valdrakken'] = 'Trono de los Aspectos'
 L['great_vault_label'] = 'Gran Cámara'
 L['storms_fury_label'] = '{spell:76232}'
 L['time_rift_label'] = '{spell:409045}'
@@ -51,5 +51,5 @@ L['zone_the_forbidden_reach'] = 'El Confín Olvidado'
 -------------------------------- ZARALEK CAVERN -------------------------------
 
 L['faction_niffen'] = 'Loamm'
-L['researchers_under_fire'] = 'Researchers Under Fire'
+L['researchers_under_fire'] = 'Investigadores bajo el Fuego'
 L['zone_zaralek_cavern'] = 'Caverna Zaralek'
