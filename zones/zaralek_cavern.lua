@@ -8,7 +8,7 @@ local map = Map({id = 2133})
 
 map[7489] = {
     group = ns.groups.FACTION_NIFFEN,
-    coordinates = 97248274
+    coordinates = 88898299
 } -- Loamm
 
 --------------------------- RESEARCHERS UNDER FIRE ----------------------------
