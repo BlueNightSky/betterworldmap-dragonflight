@@ -20,8 +20,10 @@ _G[ADDON_NAME] = Addon
 ------------------------------------- MAP -------------------------------------
 
 ns.Map = function(attrs)
-    ns.map[ns.parentMapID][attrs.id] = {}
-    return ns.map[ns.parentMapID][attrs.id]
+    for k, v in pairs(attrs) do self[k] = v end
+    self.pins = {}
+    ns.map[ns.parentMapID][self.id] = {}
+    return ns.map[ns.parentMapID][self.id]
 end
 
 ----------------------------------- OPTIONS -----------------------------------
@@ -125,10 +127,17 @@ end
 function Addon:OnInitialize()
     if not _G[ns.DB] then ns:SetDefaultOptions() end
 
+    if not ns.parentMapID then
+        error('Parent Map ID not set: ' .. ADDON_NAME)
+    end
+
     local template = ADDON_NAME .. 'WorldMapOptionsButtonTemplate'
     LibStub('Krowi_WorldMapButtons-1.4'):Add(template, 'DROPDOWNTOGGLEBUTTON')
 
     self:RegisterEvent('PLAYER_ENTERING_WORLD', function()
+        if not ns.expansion then
+            error('Expansion not set: ' .. ADDON_NAME)
+        end
         self:UnregisterEvent('PLAYER_ENTERING_WORLD')
         local expansion_name = EJ_GetTierInfo(ns.expansion)
         ns.addon_name = 'BetterWorldMap: ' .. expansion_name
