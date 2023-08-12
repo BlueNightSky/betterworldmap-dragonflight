@@ -12,11 +12,11 @@ ns.IsGroupEnabled = function(group)
 end
 
 ns.IsValidID = function(childMapID, id)
-    return ns.map[ns.parentMapID][childMapID][id] and true or false
+    return ns.map[ns.parentMapID][childMapID].pins[id] and true or false
 end
 
 ns.IsGroupMember = function(childMapID, id, group)
-    return ns.map[ns.parentMapID][childMapID][id].group == group
+    return ns.map[ns.parentMapID][childMapID].pins[id].group == group
 end
 
 ---------------------------------- AREA POIS ----------------------------------
@@ -24,7 +24,7 @@ end
 ns.POI = {}
 
 ns.POI.ProcessPOIInfo = function(self, map, mapID, childMapID, poiInfo)
-    local poi = ns.map[mapID][childMapID][poiInfo.areaPoiID]
+    local poi = ns.map[mapID][childMapID].pins[poiInfo.areaPoiID]
     if ns.IsGroupEnabled(poi.group) then
         if poi.coordinates then
             local x, y = ns.GetXY(poi.coordinates)
@@ -40,7 +40,7 @@ ns.POI.ProcessPOIInfo = function(self, map, mapID, childMapID, poiInfo)
 end
 
 ns.POI.ProcessPassiveMapPOIs = function(self, map, mapID, childMapID)
-    for poiID, poiData in pairs(ns.map[mapID][childMapID]) do
+    for poiID, poiData in pairs(ns.map[mapID][childMapID].pins) do
         if poiData.passive and poiData.passive == true then
             local poiInfo = C_AreaPoiInfo.GetAreaPOIInfo(childMapID, poiID)
             if poiInfo then
@@ -97,7 +97,7 @@ ns.FP.CreatePin = function(nodeID, group)
 end
 
 ns.FP.ProcessTaxiNode = function(mapID, childMapID, taxiNode, group)
-    local fp = ns.map[mapID][childMapID][taxiNode.nodeID]
+    local fp = ns.map[mapID][childMapID].pins[taxiNode.nodeID]
     if not fp.pin then fp.pin = ns.FP.CreatePin(taxiNode.nodeID, group) end
     local pin = fp.pin
     pin:HookScript('OnEnter', function()
