@@ -5,9 +5,7 @@ local Addon = LibStub('AceAddon-3.0'):NewAddon(ADDON_NAME, 'AceEvent-3.0')
 local L = LibStub('AceLocale-3.0'):GetLocale(ADDON_NAME)
 
 ns.addon = Addon
-ns.groups = {}
 ns.locale = L
-ns.map = {}
 
 ns.DB = ADDON_NAME .. 'DB'
 
@@ -16,15 +14,6 @@ ns.PIN = LibStub('HereBeDragons-Pins-2.0')
 ns.DDM = LibStub('LibUIDropDownMenu-4.0')
 
 _G[ADDON_NAME] = Addon
-
-------------------------------------- MAP -------------------------------------
-
-ns.Map = function(attrs)
-    for k, v in pairs(attrs) do self[k] = v end
-    self.pins = {}
-    ns.map[ns.parentMapID][self.id] = {}
-    return ns.map[ns.parentMapID][self.id]
-end
 
 ----------------------------------- OPTIONS -----------------------------------
 
@@ -125,25 +114,19 @@ end
 ------------------------------------ ADDON ------------------------------------
 
 function Addon:OnInitialize()
-    if not _G[ns.DB] then ns:SetDefaultOptions() end
+    if not ns.expansion then error('Expansion not set: ' .. ADDON_NAME) end
+    if not ns.parentMapID then error('Parent map not set: ' .. ADDON_NAME) end
 
-    if not ns.parentMapID then
-        error('Parent Map ID not set: ' .. ADDON_NAME)
-    end
+    if not _G[ns.DB] then ns:SetDefaultOptions() end
 
     local template = ADDON_NAME .. 'WorldMapOptionsButtonTemplate'
     LibStub('Krowi_WorldMapButtons-1.4'):Add(template, 'DROPDOWNTOGGLEBUTTON')
 
     self:RegisterEvent('PLAYER_ENTERING_WORLD', function()
-        if not ns.expansion then
-            error('Expansion not set: ' .. ADDON_NAME)
-        end
         self:UnregisterEvent('PLAYER_ENTERING_WORLD')
         local expansion_name = EJ_GetTierInfo(ns.expansion)
         ns.addon_name = 'BetterWorldMap: ' .. expansion_name
     end)
-
-    for _, group in pairs(ns.groups) do ns.PrepareText(group.label) end
 end
 
 function Addon:Refresh()
