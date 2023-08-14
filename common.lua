@@ -28,7 +28,7 @@ ns.groups.DRAGONRIDING_RALLY = Group({
 
 ns.groups.ELEMENTAL_STORM = Group({
     atlas = 'ElementalStorm-Lesser-Fire',
-    label = L['elemental_storm_label']
+    label = L['elemental_storm_label'],
     name = 'elemental_storm'
 }) -- Elemental Storms
 
