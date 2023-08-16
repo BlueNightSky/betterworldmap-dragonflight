@@ -1,6 +1,6 @@
 ## Interface: 100105
 ## Title: BetterWorldMap: Dragonflight
-## Version: 06
+## Version: 08
 ## Notes: Add pins to world map for Dragonflight
 ## OptionalDeps: Ace3
 ## X-Embeds: Ace3
