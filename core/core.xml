@@ -3,4 +3,6 @@
   <Script file="groups.lua"/>
   <script file="maps.lua"/>
   <Script file="pins.lua"/>
+  <Script file="util.lua"/>
+  <Script file="pois.lua"/>
 </Ui>
