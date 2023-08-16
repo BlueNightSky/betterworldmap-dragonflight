@@ -1,10 +1,10 @@
-**An addon for the Dragonflight expansion. It will add icons for points of interest to the Dragon Isles world map.**
+**An addon for the Dragonflight expansion. It will add icons for points of interest to the Dragon Isles and Kalimdor world map.**
 
 Now available on CurseForge! [BetterWorldMap: Dragonflight](https://www.curseforge.com/wow/addons/betterworldmap-dragonflight)
 
 ## Features
 
-A quick toggle menu will appear on the Dragon Isles map which allows you to quickly toggle the visibility of any icons added to the world map.
+A quick toggle menu will appear on the Dragon Isles and Kalimdor map which allows you to quickly toggle the visibility of any icons added to the world map.
 
 This addon adds information to the Dragon Isles map for the following zones:
 
@@ -13,7 +13,11 @@ This addon adds information to the Dragon Isles map for the following zones:
 * Patch 10.0.7 - The Forbidden Reach
 * Patch 10.1.5 - Zaralek Cavern
 
-### Dragon Isles
+This addon adds information to the Kalimdor map for the following zones:
+
+* Patch 10.1.5 - Ashenvale, Azshara, Desolace, Durotar, Felwood, Feralas, Silithus, Southern Barrens, Stonetalon Mountains, Thousand Needles, Un'Goro Crater, and Winterspring
+
+## Dragon Isles
 
 * Ancient Waygate locations in all zones. Learn more about [Mastering the Waygates](https://www.wowhead.com/achievement=16292/mastering-the-waygates).
 * Dragonriding Rally. Race against other racers in [Dragonriding](https://www.wowhead.com/guide/dragonriding/races-overview-rewards).
@@ -53,9 +57,13 @@ This addon adds information to the Dragon Isles map for the following zones:
 * Loamm location. Learn more about the [Loamm Niffen](https://www.wowhead.com/faction=2564/loamm-niffen).
 * Researchers Under Fire location. Learn more about the [Researchers Under Fire](https://www.wowhead.com/guide/zaralek-cavern#weekly-event-researchers-under-fire) event.
 
+## Kalimdor
+
+* Kalimdor Cup locations in all zones. Become a [Kalimdor Racer](https://www.wowhead.com/guide/dragonriding/kalimdor-cup-event).
+
 ## Limitations
 
-Due to World of Warcraft API limitations this addon _cannot_ show exact Grand Hunt locations unless you are in the zone where the Grand Hunt is currently active.
+Due to World of Warcraft API limitations this addon _cannot_ show exact Grand Hunt or Researchers Under Fire locations unless you are in the zone where they are currently active.
 
 ## Localization
 
