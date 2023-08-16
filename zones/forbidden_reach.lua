@@ -1,25 +1,32 @@
+-------------------------------------------------------------------------------
 ---------------------------------- NAMESPACE ----------------------------------
+-------------------------------------------------------------------------------
 local _, ns = ...
 local Map = ns.Map
 
-local map = Map({id = 2151})
+local AncientWaygate = ns.pin.AncientWaygate
+local FishingHole = ns.pin.FishingHole
+local FrostStoneVaultStorm = ns.pin.FrostStoneVaultStorm
 
+-------------------------------------------------------------------------------
+
+local map = Map({id = 2151, parent = ns.parentMapID})
+
+-------------------------------------------------------------------------------
 ------------------------------ ANCIENT WAYGATES -------------------------------
+-------------------------------------------------------------------------------
 
-map.pins[2862] = {
-    group = ns.groups.ANCIENT_WAYGATES,
-    coordinates = 61221253
-} -- Morqut Islet
+map.pins[2862] = AncientWaygate({coordinates = 61221253}) -- Morqut Islet
 
+-------------------------------------------------------------------------------
 -------------------------------- FISHING HOLE ---------------------------------
+-------------------------------------------------------------------------------
 
-map.pins[7412] = {
-    group = ns.groups.FISHING_HOLE
-} -- Dragonskull Island Fishing Hole
+map.pins[7412] = FishingHole -- Dragonskull Island Fishing Hole
 
+-------------------------------------------------------------------------------
 ------------------------ FROSTSTONE VAULT PRIMAL STORM ------------------------
-
-local FrostStoneVaultStorm = {group = ns.groups.FROSTSTONE_VAULT_STORM}
+-------------------------------------------------------------------------------
 
 map.pins[7408] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Air
 map.pins[7409] = FrostStoneVaultStorm -- Froststone Vault Primal Storm - Earth
