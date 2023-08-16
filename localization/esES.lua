@@ -56,5 +56,5 @@ L['zone_zaralek_cavern'] = 'Caverna Zaralek'
 
 ----------------------------------- KALIMDOR ----------------------------------
 
-L['kalimdor_cup'] = 'Kalimdor Cup'
+L['kalimdor_cup'] = 'Copa de Kalimdor'
 L['zone_kalimdor'] = 'Kalimdor'
