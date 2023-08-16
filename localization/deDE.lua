@@ -53,3 +53,8 @@ L['zone_the_forbidden_reach'] = 'Die Verbotene Insel'
 L['faction_niffen'] = 'Loamm'
 L['researchers_under_fire'] = 'Researchers Under Fire'
 L['zone_zaralek_cavern'] = 'Zaralekhöhle'
+
+----------------------------------- KALIMDOR ----------------------------------
+
+L['kalimdor_cup'] = 'Kalimdor Cup'
+L['zone_kalimdor'] = 'Kalimdor'

@@ -53,3 +53,8 @@ L['zone_the_forbidden_reach'] = 'El Confín Olvidado'
 L['faction_niffen'] = 'Loamm'
 L['researchers_under_fire'] = 'Investigadores bajo el Fuego'
 L['zone_zaralek_cavern'] = 'Caverna Zaralek'
+
+----------------------------------- KALIMDOR ----------------------------------
+
+L['kalimdor_cup'] = 'Kalimdor Cup'
+L['zone_kalimdor'] = 'Kalimdor'

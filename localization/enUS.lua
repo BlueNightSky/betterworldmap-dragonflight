@@ -53,3 +53,8 @@ L['zone_the_forbidden_reach'] = 'The Forbidden Reach'
 L['faction_niffen'] = 'Loamm'
 L['researchers_under_fire'] = 'Researchers Under Fire'
 L['zone_zaralek_cavern'] = 'Zaralek Cavern'
+
+----------------------------------- KALIMDOR ----------------------------------
+
+L['kalimdor_cup'] = 'Kalimdor Cup'
+L['zone_kalimdor'] = 'Kalimdor'
